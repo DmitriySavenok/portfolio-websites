@@ -255,9 +255,11 @@ __webpack_require__.r(__webpack_exports__);
 function portfolioSlider() {
   var info = document.querySelector('.portfolio__info');
   var about = document.querySelector('.portfolio__about');
+  var width = window.innerWidth;
   document.addEventListener('DOMContentLoaded', function () {
-    var width = window.innerWidth;
+    console.log(width);
     if (width > 768) {
+      console.log('Слайдер работает');
       var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.portfolio__slider', {
         modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__["FreeMode"], swiper_modules__WEBPACK_IMPORTED_MODULE_1__["Mousewheel"], swiper_modules__WEBPACK_IMPORTED_MODULE_1__["Parallax"]],
         direction: 'horizontal',
